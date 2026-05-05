@@ -679,30 +679,13 @@ my_product/framework/com.android.hotwordenrollment.common.util.jar:product/frame
 my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
 my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 
-# IMS
+# IMS(SYSTEM) - pinned from LA.QSSI.16.0.r1-01200-qssi.0
 system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/etc/permissions/vendor.qti.imsdatachannel.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
-system_ext/framework/oplus-ims-ext.jar
-system_ext/framework/vendor.qti.hardware.c2pa-V1-java.jar
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.datachannelservice-V3-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
-system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
-system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
-system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
-system_ext/framework/vendor.qti.imsdatachannel.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -710,11 +693,44 @@ system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.ImsRtpService-V2-ndk.so
+system_ext/lib64/vendor.qti.ims.datachannelservice-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.datachannelservice-V2-ndk.so
 system_ext/lib64/vendor.qti.ims.datachannelservice-V3-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk
+-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
+-system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
+-system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
+-system_ext/framework/vendor.qti.ims.datachannelservice-V2-java.jar
+-system_ext/framework/vendor.qti.ims.datachannelservice-V3-java.jar
+-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
+-system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
+-system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
+-system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
+-system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
+-system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
+-system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
+-system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
+-system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
+-system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar
+-system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar
+-system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
+-system_ext/framework/vendor.qti.imsdatachannel.jar
+-system_ext/priv-app/ims/ims.apk
+-system_ext/app/ImsRcsService/ImsRcsService.apk
+-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+-system_ext/priv-app/QtiTelephony/QtiTelephony.apk
+-system_ext/app/atfwd/atfwd.apk
+-system_ext/app/AtFwd2/AtFwd2.apk
+-system_ext/app/DeviceInfo/DeviceInfo.apk
+-system_ext/app/DynamicDDSService/DynamicDDSService.apk
+-system_ext/app/ImsDataChannelService/ImsDataChannelService.apk
+-system_ext/app/SimContact/SimContact.apk
+-system_ext/app/uceShimService/uceShimService.apk
+
+# IMS(VENDOR)
 vendor/bin/ims-dataservice-daemon
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
@@ -777,6 +793,8 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.2.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.imsrtpservice@3.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE_SUFFIX=_vendor
+system_ext/framework/oplus-ims-ext.jar
+system_ext/framework/vendor.qti.hardware.c2pa-V1-java.jar
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -1068,7 +1086,6 @@ odm/lib64/libvasapi.so
 odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so
 odm/lib64/vendor.oplus.hardware.subsys-V5-ndk.so
 odm/lib64/vendor.oplus.hardware.subsys_radio-V8-ndk.so
-system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
