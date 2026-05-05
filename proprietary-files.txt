@@ -936,8 +936,6 @@ odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/etc/charge.cfg
 odm/lib64/libGaiaClient_vnd.so
 odm/etc/permissions/vendor-oplus-hardware-charger.xml
-odm/firmware/fastchg/charge_time_config.csv
-odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/lib/vendor.oplus.hardware.charger-V10-ndk.so
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger-V10-ndk.so
