@@ -164,6 +164,7 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf.scroll_opt=true
 vendor.perf.framepacing.enable=1
 vendor.perf.framepacing.window_apis=0x04
+ro.vendor.perf-hal.ver=3.0
 
 # Radio
 persist.radio.multisim.config=dsds
