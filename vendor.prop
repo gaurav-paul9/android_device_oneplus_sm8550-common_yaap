@@ -161,6 +161,7 @@ ro.netflix.bsp_rev=Q8550-36432-1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=true
 
 # Radio
 persist.radio.multisim.config=dsds
