@@ -123,16 +123,16 @@ echo 0 > /proc/sys/walt/sched_boost
 echo 0 > /proc/sys/kernel/sched_util_clamp_min_rt_default
 
 # configure governor settings for silver cluster
-echo "walt" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/up_rate_limit_us
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
+echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
-	echo 1324800 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
+	echo 1324800 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 else
-	echo 1267200 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
+	echo 1267200 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
 fi
 echo 556800 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
+echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 # configure input boost settings
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
@@ -143,28 +143,28 @@ fi
 echo 100 > /proc/sys/walt/input_boost/input_boost_ms
 
 # configure governor settings for gold cluster
-echo "walt" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpufreq/policy3/walt/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpufreq/policy3/walt/up_rate_limit_us
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
+echo 0 > /sys/devices/system/cpu/cpufreq/policy3/schedutil/down_rate_limit_us
+echo 0 > /sys/devices/system/cpu/cpufreq/policy3/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
-	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy3/walt/hispeed_freq
+	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy3/schedutil/hispeed_freq
 else
-	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy3/walt/hispeed_freq
+	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy3/schedutil/hispeed_freq
 fi
 echo 537600 > /sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq
-echo 1 > /sys/devices/system/cpu/cpufreq/policy3/walt/pl
+echo 1 > /sys/devices/system/cpu/cpufreq/policy3/schedutil/pl
 
 # configure governor settings for gold+ cluster
-echo "walt" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
-echo 0 > /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us
-echo 0 > /sys/devices/system/cpu/cpufreq/policy7/walt/up_rate_limit_us
+echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
+echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
+echo 0 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
-	echo 1593600 > /sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq
+	echo 1593600 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 else
-	echo 1728000 > /sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq
+	echo 1728000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 fi
 echo 748800 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
-echo 1 > /sys/devices/system/cpu/cpufreq/policy7/walt/pl
+echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
 # configure bus-dcvs
 bus_dcvs="/sys/devices/system/cpu/bus_dcvs"

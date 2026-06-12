@@ -203,8 +203,8 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "475000000",
-        "124800000"
+        "124800000",
+        "475000000"
       ],
       "ResetOnInit": true
     },
@@ -212,8 +212,8 @@
       "Name": "GPUForceRailOn",
       "Path": "/sys/class/kgsl/kgsl-3d0/force_rail_on",
       "Values": [
-        "1",
-        "0"
+        "0",
+        "1"
       ],
       "ResetOnInit": true
     },
@@ -221,8 +221,8 @@
       "Name": "GPUForceClkOn",
       "Path": "/sys/class/kgsl/kgsl-3d0/force_clk_on",
       "Values": [
-        "1",
-        "0"
+        "0",
+        "1"
       ],
       "ResetOnInit": true
     },
@@ -230,8 +230,9 @@
       "Name": "GPUIdleTimer",
       "Path": "/sys/class/kgsl/kgsl-3d0/idle_timer",
       "Values": [
-        "10000",
-        "200"
+        "80",
+        "200",
+        "10000"
       ],
       "ResetOnInit": true
     },
