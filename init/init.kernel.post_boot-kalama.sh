@@ -163,7 +163,7 @@ if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
 else
 	echo 1728000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
 fi
-echo 748800 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
+echo 595200 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
 
 # configure bus-dcvs
