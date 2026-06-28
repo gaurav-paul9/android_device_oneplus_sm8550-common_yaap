@@ -8,6 +8,7 @@ cdsp-loader.ko
 cdsprm.ko
 core_hang_detect.ko
 cpu_voltage_cooling.ko
+dcvs_boost.ko
 ddr_cdev.ko
 debugcc-kalama.ko
 dmesg_dumper.ko
